@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--i have put a title as tic tac toe
+  and then give the links for bootstrap and jquery which is needed for this game to create one.
+  I have also give the script links to joine the files which is app.js and style.css and index.html-->  
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- I gave an Id for my header and give a class of contianer text center -->
+<div id="header" class="container text-center p-3">
+<!-- I gave padding of 2 to this -->
+    <div class="row pt-2"> 
+  <div class="col">
+    <h1 class="m-3">Tic - Tac - Toe</h1>
+    </div>
+</div>
+<!-- Which Player is playing giving the padding top of 2 and i add 3 div .-->
+<div class="row pt-2">
+    <div class="col fs-2"> Player 1 - X</div>
+    <div class="col fs-2"></div>
+    <div class="col fs-2"> Player 2 - O</div>
+</div>
+
+</div>
+
+ <!------Alert pop up ----->
+ <!--- I give the id for player 1  and add a class to each div so we can add a margin to the right and left and add  the font size -->
+ <div  id="alertStart"  class ="alert alert-info text-center m-0 ms-5 fs-3" role="alert">
+    Player 1 Start ! 🏁
+  </div>
+  <!--- Id for winner -->
+  <div  id="alertWinner"   class="alert alert-info text-center m-0 ms-5 fs-3" role="alert">
+    Winner
+</div>
+<!---  Id for draw-->
+<div id="alertDraw" class="alert alert-info text-center m-0 ms-5 fs-3" role="alert">
+    Game Over! It's a Draw!
+</div> 
+
+ <!----Grid------->
+<!----To make sure it center and to put padding and gutter.---->
+ <div class="container m-auto p-3 g-5">
+   <!---for this div i  give the id of grid and class auto margin and no padding and text to be certain color 
+   and text to be in center and i want to do align and give it a border -->
+    
+   <div id="grid" class="container-outline-light m-auto p-0 bg-dark
+        text-info text-center align-middle border border-info">
+
+    <div class="row fs-1 g-0 ">
+        <div id="box0" class="box  col  p-3 border border-info"></div>
+        <div id="box1" class="box  col  p-3 border border-info"></div>
+        <div id="box2" class="box  col  p-3 border border-info"></div>
+    </div>
+
+    <div class="row fs-1 g-0 ">
+        <div id="box3" class="box  col  p-3 border border-info"></div>
+        <div id="box4" class="box  col  p-3 border border-info"></div>
+        <div id="box5" class="box  col  p-3 border border-info"></div>
+    </div>
+
+ <div class="row fs-1 g-0 ">
+        <div id="box6" class="box  col  p-3 border border-info"></div>
+        <div id="box7" class="box  col  p-3 border border-info"></div>
+        <div id="box8" class="box  col  p-3 border border-info"></div>
+    </div>
+</div>
+ </div>
+
+  <!----Buttons-->
+  <!----Add 2 buttons and put them in a div  give them a class of deep grid and add 2 col and a 3 gap and add the padding top of 4 
+  and give them id which start btn and reset btn. -->
+  <div class="d-grid col-3 gap-3 mx-auto pt-4">
+  <button  id="startbtn"  type="button" class="btn btn-outline-info btn-lg" >START</button>
+  <button  id="resetbtn"  type="button" class="btn btn-outline-dark btn-lg">RESET</button>
+</div>
+  
+  
+  
+  
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="app.js"></script>
+
+    
+</body>
+</html>
+   
