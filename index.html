@@ -3,13 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!DOCTYPE html>
-<html lang="en">
-<head>
+
   <!--i have put a title as tic tac toe
   and then give the links for bootstrap and jquery which is needed for this game to create one.
   I have also give the script links to joine the files which is app.js and style.css and index.html-->  
-    <title>Tic Tac Toe</title>
+   <title>Tic Tac Toe</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -32,20 +30,27 @@
 </div>
 
  <!------Alert pop up ----->
+ 
  <!--- I give the id for player 1  and add a class to each div so we can add a margin to the right and left and add  the font size -->
- <div  id="alertStart"  class ="alert alert-info text-center m-0 ms-5 fs-3" role="alert">
+ 
+ <div id="alert--container">
+  
+  <div  id="alertStart"  class ="alert alert-info text-center m-0 ms-5 me-5  fs-3" role="alert">
     Player 1 Start ! 🏁
-  </div>
-  <!--- Id for winner -->
-  <div  id="alertWinner"   class="alert alert-info text-center m-0 ms-5 fs-3" role="alert">
-    Winner
+    </div>
+<!--- Id for winner -->
+<div  id="alertWinner"   class="alert alert-info text-center m-0 ms-5 me-5 fs-3" role="alert">
+  Winner
 </div>
 <!---  Id for draw-->
-<div id="alertDraw" class="alert alert-info text-center m-0 ms-5 fs-3" role="alert">
-    Game Over! It's a Draw!
-</div> 
+<div id="alertDraw" class="alert alert-info text-center m-0 ms-5 me-5 fs-3" role="alert"> 
+  Game Over! It's a Draw!
+ </div>
 
- <!----Grid------->
+</div>  
+
+
+<!----Grid------->
 <!----To make sure it center and to put padding and gutter.---->
  <div class="container m-auto p-3 g-5">
    <!---for this div i  give the id of grid and class auto margin and no padding and text to be certain color 
@@ -82,12 +87,9 @@
   <button  id="resetbtn"  type="button" class="btn btn-outline-dark btn-lg">RESET</button>
 </div>
   
-  
-  
-  
-  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
     <script src="node_modules/jquery/dist/jquery.js"></script>
-    <script src="app.js"></script>
+    <script src="./jquery.js"></script>
 
     
 </body>

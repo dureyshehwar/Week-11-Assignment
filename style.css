@@ -6,3 +6,6 @@
 .box{
     min-height: 100px;
 }
+#alert--container{
+    min-height: 70px
+}
